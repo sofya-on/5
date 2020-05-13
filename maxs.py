@@ -1,5 +1,4 @@
 def ternmat(s1,s2):
-    print ("Введите матрицу:") 
     d=0     
     t=[]   
     s3=[] 
@@ -14,7 +13,7 @@ def ternmat(s1,s2):
             for j in range(0,c2):
                 for i in range(0,c1):
                    d=d+s1[z][i]*s2[i][j]
-                t.append(s)
+                t.append(d)
                 s=0
             s3.append(t)
             t=[]           
@@ -32,8 +31,8 @@ while  tot-tot1 > 0.0001:
      b=ternmat(a,s)
      t = ternmat(a,x)
      p = ternmat(b,x)
-     if res!=1:
-       res1=res
+     if tot!=1:
+       tot1=tot
      tot=1/3*(p[0][0]/t[0][0]+p[1][0]/t[1][0]+p[2][0]/t[2][0])
      k+=1
      
